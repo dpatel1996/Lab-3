@@ -22,26 +22,36 @@
         <p> Age: 
           <select name="dropdown">
           <option value="age_field" selected> Under 18</option>
-          <option value="18-24" selected> 18-24</option>
-          <option value="25-34" selected> 25-34</option>
-          <option value="35-44" selected> 35-44</option>
-          <option value="45-54" selected> 45-54</option>
-          <option value="55-64" selected> 55-64</option>
-          <option value="65 and over" selected> 65 and over</option>
+          <option value="age_field" selected> 18-24</option>
+          <option value="age_field" selected> 25-34</option>
+          <option value="age_field" selected> 35-44</option>
+          <option value="age_field" selected> 45-54</option>
+          <option value="age_field" selected> 55-64</option>
+          <option value="age_field" selected> 65 and over</option>
         </p>
       </fieldset>
+    </form>
+      
+    <form>
       <fieldset>
         <legend> My Availability </legend>
         <p>Days Availability
           <input type="checkbox" name="available_field[]" value="on"> Sunday
-          <input type="checkbox" name="Monday" value="on"> Monday
-          <input type="checkbox" name="Tuesday" value="on"> Tuesday
-          <input type="checkbox" name="Wednesday" value="on"> Wednesday
-          <input type="checkbox" name="Thursday" value="on"> Thursday
-          <input type="checkbox" name="Friday" value="on"> Friday
-          <input type="checkbox" name="Saturday" value="on"> Saturday
+          <input type="checkbox" name="available_field[]" value="on"> Monday
+          <input type="checkbox" name="available_field[]" value="on"> Tuesday
+          <input type="checkbox" name="available_field[]" value="on"> Wednesday
+          <input type="checkbox" name="available_field[]" value="on"> Thursday
+          <input type="checkbox" name="available_field[]" value="on"> Friday
+          <input type="checkbox" name="available_field[]" value="on"> Saturday
         </p>
         
+        <p> Any Comments :
+          <text area rows="5" cols="50" name="comments_field">
+          </textarea>
+        </p>
+        
+        <p> </p>
+        <input type="hidden_field" name="Send Me" value="Send Me"/> 
        
       </fieldset>  
     </form>
