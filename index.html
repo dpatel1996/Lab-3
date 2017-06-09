@@ -14,14 +14,14 @@
         <p>Phone Number: <input type="text" name="phone_field"/> </p>
         <p>Email Address: <input type="text" name="email_field"/> </p>
       
-        <p> Gender 
-          <input type="radio" name="subject" value="Male"> Male
-          <input type="radio" name="subject" value="Female"> Female
+        <p> Gender:  
+          <input type="radio" name="gender_field" value="Male"> Male
+          <input type="radio" name="gender_field" value="Female"> Female
         </p>
         
-        <p> Age 
+        <p> Age: 
           <select name="dropdown">
-          <option value="under 18" selected> Under 18</option>
+          <option value="age_field" selected> Under 18</option>
           <option value="18-24" selected> 18-24</option>
           <option value="25-34" selected> 25-34</option>
           <option value="35-44" selected> 35-44</option>
@@ -30,6 +30,20 @@
           <option value="65 and over" selected> 65 and over</option>
         </p>
       </fieldset>
+      <fieldset>
+        <legend> My Availability </legend>
+        <p>Days Availability
+          <input type="checkbox" name="available_field[]" value="on"> Sunday
+          <input type="checkbox" name="Monday" value="on"> Monday
+          <input type="checkbox" name="Tuesday" value="on"> Tuesday
+          <input type="checkbox" name="Wednesday" value="on"> Wednesday
+          <input type="checkbox" name="Thursday" value="on"> Thursday
+          <input type="checkbox" name="Friday" value="on"> Friday
+          <input type="checkbox" name="Saturday" value="on"> Saturday
+        </p>
+        
+       
+      </fieldset>  
     </form>
   </body>
 </html>
