@@ -2,11 +2,12 @@
 <html lang="en">
 
   <head>
-    <meta charset="utd-8">
+    <meta charset="utf-8">
     <title> Forms Lab 3</title>
   </head>
   <body>
-    <form>
+    <h1> Volunteer Form </h1>
+    <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
       <fieldset>
         <legend>My Information !! </legend>
         <p>First Name : <input type="text" name="first_name_field"/> <p>
@@ -14,13 +15,14 @@
         <p>Phone Number: <input type="text" name="phone_field"/> </p>
         <p>Email Address: <input type="text" name="email_field"/> </p>
       
-        <p> Gender:  
-          <input type="radio" name="gender_field" value="Male"> Male
-          <input type="radio" name="gender_field" value="Female"> Female
+        <p> 
+          <label> Gender: </label>
+          <label> Male <input type="radio" name="gender_field" value="Male"> </label>
+          <label> Female <input type="radio" name="gender_field" value="Female"> </label>
         </p>
         
-        <p> Age: 
-          <select name="dropdown">
+        <label> Age: </label>
+          <select name="age_field">
           <option value="age_field" selected> Under 18</option>
           <option value="age_field" selected> 18-24</option>
           <option value="age_field" selected> 25-34</option>
@@ -28,32 +30,33 @@
           <option value="age_field" selected> 45-54</option>
           <option value="age_field" selected> 55-64</option>
           <option value="age_field" selected> 65 and over</option>
-        </p>
+        </select>
       </fieldset>
-    </form>
-      
-    <form>
+    
+      <p> </p>
+     
       <fieldset>
         <legend> My Availability </legend>
-        <p>Days Availability
-          <input type="checkbox" name="available_field[]" value="on"> Sunday
-          <input type="checkbox" name="available_field[]" value="on"> Monday
-          <input type="checkbox" name="available_field[]" value="on"> Tuesday
-          <input type="checkbox" name="available_field[]" value="on"> Wednesday
-          <input type="checkbox" name="available_field[]" value="on"> Thursday
-          <input type="checkbox" name="available_field[]" value="on"> Friday
-          <input type="checkbox" name="available_field[]" value="on"> Saturday
-        </p>
+          <label>Days Availability: </label>
+          <label><input type="checkbox" name="available_field[]" value="Sun"> Sunday </label>
+          <label><input type="checkbox" name="available_field[]" value="Monday"> Monday </label>
+          <label><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday </label>
+          <label><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday </label>
+          <label><input type="checkbox" name="available_field[]" value="Thursday"> Thursday </label>
+          <label><input type="checkbox" name="available_field[]" value="Friday"> Friday </label>
+          <label><input type="checkbox" name="available_field[]" value="Saturday"> Saturday </label>
         
-        <p> Any Comments :
-          <text area rows="5" cols="50" name="comments_field">
+        
+        <label> Any Comments : </label>
+          <text area rows="90" cols="5" name="comments_field" id="text_area">
           </textarea>
-        </p>
-        
         <p> </p>
-        <input type="hidden_field" name="Send Me" value="Send Me"/> 
-       
+        
+        <p>
+          <input type="hidden" name="hidden_field" value="Patel"> 
+        </p>
       </fieldset>  
+      <p><input type="submit" value="Send Me"></p>
     </form>
   </body>
 </html>
