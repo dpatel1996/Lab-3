@@ -21,39 +21,39 @@
           <label> Female <input type="radio" name="gender_field" value="Female"> </label>
         </p>
         
+        <p>
         <label> Age: </label>
           <select name="age_field">
-          <option value="age_field" selected> Under 18</option>
-          <option value="age_field" selected> 18-24</option>
-          <option value="age_field" selected> 25-34</option>
-          <option value="age_field" selected> 35-44</option>
-          <option value="age_field" selected> 45-54</option>
-          <option value="age_field" selected> 55-64</option>
-          <option value="age_field" selected> 65 and over</option>
+          <option value="Under 18" > Under 18</option>
+          <option value="18-24"> 18-24</option>
+          <option value="25-34"> 25-34</option>
+          <option value="35-44"> 35-44</option>
+          <option value="45-54"> 45-54</option>
+          <option value="55-64"> 55-64</option>
+          <option value="65 and over"> 65 and over</option>
         </select>
+        </p>
       </fieldset>
-    
-      <p> </p>
-     
+             
       <fieldset>
         <legend> My Availability </legend>
           <label>Days Availability: </label>
-          <label><input type="checkbox" name="available_field[]" value="Sun"> Sunday </label>
-          <label><input type="checkbox" name="available_field[]" value="Monday"> Monday </label>
-          <label><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday </label>
-          <label><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday </label>
-          <label><input type="checkbox" name="available_field[]" value="Thursday"> Thursday </label>
-          <label><input type="checkbox" name="available_field[]" value="Friday"> Friday </label>
-          <label><input type="checkbox" name="available_field[]" value="Saturday"> Saturday </label>
-        
-        
+          <p><label><input type="checkbox" name="available_field[]" value="Sunday"> Sunday </label></p>
+          <p><label><input type="checkbox" name="available_field[]" value="Monday"> Monday </label></p>
+          <p><label><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday </label></p>
+          <p><label><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday </label></p>
+          <p><label><input type="checkbox" name="available_field[]" value="Thursday"> Thursday </label></p>
+          <p><label><input type="checkbox" name="available_field[]" value="Friday"> Friday </label></p>
+          <p><label><input type="checkbox" name="available_field[]" value="Saturday"> Saturday </label></p>
+          
         <label> Any Comments : </label>
-          <text area rows="90" cols="5" name="comments_field" id="text_area">
+        <p>
+          <textarea cols="90" rows="6"  name="comments_field" id="text_area">
           </textarea>
-        <p> </p>
+        </p>
         
         <p>
-          <input type="hidden" name="hidden_field" value="Patel"> 
+          <input type="hidden" name="hidden_field" value="Patel Dhruv"> 
         </p>
       </fieldset>  
       <p><input type="submit" value="Send Me"></p>
